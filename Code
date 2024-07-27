@@ -1,0 +1,24 @@
+def cal(a,b,ch):
+    if(ch=='+'):
+        return a+b
+    elif(ch=='-'):
+        return a-b
+    elif(ch=='*'):
+        return a*b
+    elif(ch=='/'):
+        return a/b
+    elif(ch=='%'):
+        return a%b
+    elif(ch=='//'):
+        return a//b
+
+
+
+a=float(input("Enter first number"))
+b=float(input("Enter second number"))
+ch=input("Enter operator:")
+ans=cal(a,b,ch)
+if(ans):
+    print(f'{a}{ch}{b}={ans}')
+else:
+    print("Invalid operation")
